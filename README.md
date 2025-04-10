@@ -1,9 +1,81 @@
 # OLLAMA CHAT BOT
 
 # *Backend*
+This is the backend for the Chat-AI App, built using **FastAPI**, **MongoDB**, and **Uvicorn**. It handles user authentication, session management, chat history storage, and querying an LLM (LLaMA3) running locally.
 
+---
 
+## 📦 Tech Stack
 
+- **FastAPI** - Web framework for building APIs
+- **Uvicorn** - ASGI server for running FastAPI
+- **Motor** - Async MongoDB driver
+- **Passlib** - Password hashing with bcrypt
+- **Python-dotenv** - Environment variable management
+- **MongoDB** - NoSQL database for storing users and chats
+- **LLaMA 3 (via Ollama)** - Local large language model for generating chat responses
+
+---
+
+## 📂 Project Structure
+```code
+backend/
+├── .env # Environment variables
+├── app.py # Main FastAPI application
+├── auth.py # Password hashing and verification
+├── database.py # MongoDB async client setup
+├── model.py # Pydantic models for request validation
+├── venv/ # Virtual environment (not tracked)
+└── pycache/ # Python bytecode cache
+```
+---
+## Prerequisites
+- **Python 3.9+**
+- **MongoDB** (local or remote)
+- **ollama** (for locally running LLaMA3 model)
+- **virtualenv** (optional but recommended)
+
+---
+
+## 🔧 Setup Instructions
+```bash
+cd backend
+```
+1. Activate Virtual Environment
+```bash
+venv/bin/activate  # On Windows: venv\Scripts\activate
+```
+2. Add MongoDb URI and Hashing Key in .env (According to you setup)
+```
+MONGODB_URI=mongodb://localhost:27017
+SESSION_SECRET_KEY=your-secret-key
+```
+
+Make sure MongoDB is running locally or update the URI accordingly.
+---
+## 🚀 Running the Backend Server
+```
+uvicorn app:app --reload
+```
+Visit: http://localhost:8000
+
+---
+## 📮 API Endpoints
+
+| Method | Route        | Description                                 |
+|--------|--------------|---------------------------------------------|
+| GET    | `/`          | Welcome message                             |
+| POST   | `/signup`    | Register new user                           |
+| POST   | `/login`     | Login existing user                         |
+| POST   | `/logout`    | Logout and clear session                    |
+| GET    | `/protected` | Access protected route if logged in         |
+| POST   | `/query`     | Get LLaMA3 response based on chat history   |
+
+## 🧠 LLaMA3 Integration
+This app connects to a locally running LLaMA3 instance via command-line using:
+```bash
+echo "<formatted input>" | ollama run llama3.2
+```
 ---
 
 # *Frontend*
@@ -106,6 +178,9 @@ The response is expected to include updated chat history like:
 - Improve message formatting
 - Add persistent storage for chats
 - Mobile responsiveness
+- Add WebSocket support for live chat
+- JWT-based authentication (instead of session)
+- Dockerize backend for deployment
 
 ## 📄 License
 MIT License. Feel free to modify and use.
