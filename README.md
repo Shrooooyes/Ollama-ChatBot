@@ -18,7 +18,7 @@ This is the backend for the Chat-AI App, built using **FastAPI**, **MongoDB**, a
 ---
 
 ## 📂 Project Structure
-```code
+```folder-structure
 backend/
 ├── .env # Environment variables
 ├── app.py # Main FastAPI application
@@ -41,12 +41,17 @@ backend/
 ```bash
 cd backend
 ```
-1. Activate Virtual Environment
+1. Install Requirements from requirements.txt
+```bash
+pip install -r requirements.txt
+
+```
+2. Activate Virtual Environment
 ```bash
 venv/bin/activate  # On Windows: venv\Scripts\activate
 ```
-2. Add MongoDb URI and Hashing Key in .env (According to you setup)
-```
+3. Add MongoDb URI and Hashing Key in .env (According to you setup)
+```.env
 MONGODB_URI=mongodb://localhost:27017
 SESSION_SECRET_KEY=your-secret-key
 ```
@@ -54,7 +59,7 @@ SESSION_SECRET_KEY=your-secret-key
 Make sure MongoDB is running locally or update the URI accordingly.
 ---
 ## 🚀 Running the Backend Server
-```
+```bash
 uvicorn app:app --reload
 ```
 Visit: http://localhost:8000
@@ -96,7 +101,7 @@ echo "<formatted input>" | ollama run llama3.2
 ---
 
 ## 📁 Folder Structure
-```
+```folder-structure
 frontend/
 ├── public/
 ├── src/
@@ -148,7 +153,9 @@ npm run dev
 
 The frontend sends POST requests to:
 
-```POST http://localhost:8000/query```
+```bash
+  POST http://localhost:8000/query
+```
 
 With body:
 ```JSON
