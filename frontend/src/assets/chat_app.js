@@ -1,104 +1,64 @@
 const chats = [
   {
-    "chat_id": 0,
-    "messages": [
+    chat_id: 0,
+    messages: [
       {
-        "prompt": "my boi",
-        "response": "It sounds like you're using a colloquialism! \"My boi\" is often used as a term of endearment or familiarity, similar to \"buddy,\" \"homie,\" or \"mate.\" Is everything okay? Want to chat about what's on your mind?"
+        prompt: "Hello",
+        response: "Hello! How can I assist you today?"
       },
       {
-        "prompt": "my boi",
-        "response": "It sounds like you're using a colloquialism or slang term to refer to someone close to you, possibly a friend or loved one. \"My boi\" is a casual and affectionate way to address someone, often used in informal settings or online communities. Is there something specific you'd like to talk about or ask about your \"boi\"?"
+        prompt: "Can you help me with my project?",
+        response: "Of course. Please provide more details about your project so I can better assist you."
       },
       {
-        "prompt": "my boi",
-        "response": "It looks like you're referencing the popular internet slang term \"boi\" as a affectionate and informal way to address a friend or someone close. Is there something specific you'd like to talk about or ask related to this term?"
-      },
-      {
-        "prompt": "my boi",
-        "response": "It sounds like you're using a colloquialism or slang term to refer to someone close to you, possibly a friend or loved one. \"My boi\" is a casual and affectionate way to address someone, often used in informal settings or online communities. Is there something specific you'd like to talk about or ask about your \"boi\"?"
-      },
-      {
-        "prompt": "my boi",
-        "response": "It looks like you're referencing the popular internet slang term \"boi\" as a affectionate and informal way to address a friend or someone close. Is there something specific you'd like to talk about or ask related to this term?"
-      },
-      {
-        "prompt": "my boi",
-        "response": "It sounds like you're using a colloquialism or slang term to refer to someone close to you, possibly a friend or loved one. \"My boi\" is a casual and affectionate way to address someone, often used in informal settings or online communities. Is there something specific you'd like to talk about or ask about your \"boi\"?"
-      },
-      {
-        "prompt": "my boi",
-        "response": "It looks like you're referencing the popular internet slang term \"boi\" as a affectionate and informal way to address a friend or someone close. Is there something specific you'd like to talk about or ask related to this term?"
-      },
-      {
-        "prompt": "my boi",
-        "response": "It sounds like you're using a colloquialism or slang term to refer to someone close to you, possibly a friend or loved one. \"My boi\" is a casual and affectionate way to address someone, often used in informal settings or online communities. Is there something specific you'd like to talk about or ask about your \"boi\"?"
-      },
-      {
-        "prompt": "my boi",
-        "response": "It looks like you're referencing the popular internet slang term \"boi\" as a affectionate and informal way to address a friend or someone close. Is there something specific you'd like to talk about or ask related to this term?"
-      },
-      {
-        "prompt": "my boi",
-        "response": "It sounds like you're using a colloquialism or slang term to refer to someone close to you, possibly a friend or loved one. \"My boi\" is a casual and affectionate way to address someone, often used in informal settings or online communities. Is there something specific you'd like to talk about or ask about your \"boi\"?"
-      },
-      {
-        "prompt": "my boi",
-        "response": "It looks like you're referencing the popular internet slang term \"boi\" as a affectionate and informal way to address a friend or someone close. Is there something specific you'd like to talk about or ask related to this term?"
-      },
-      {
-        "prompt": "my boi",
-        "response": "It sounds like you're using a colloquialism or slang term to refer to someone close to you, possibly a friend or loved one. \"My boi\" is a casual and affectionate way to address someone, often used in informal settings or online communities. Is there something specific you'd like to talk about or ask about your \"boi\"?"
-      },
-      {
-        "prompt": "my boi",
-        "response": "It looks like you're referencing the popular internet slang term \"boi\" as a affectionate and informal way to address a friend or someone close. Is there something specific you'd like to talk about or ask related to this term?"
+        prompt: "Thank you",
+        response: "You're very welcome. Let me know if there's anything else you need."
       }
     ]
   },
   {
-    "chat_id": 1,
-    "messages": [
+    chat_id: 1,
+    messages: [
       {
-        "prompt": "my boi",
-        "response": "It seems like you're using a colloquial or informal term to express affection or closeness with someone. \"My boy\" (or \"my boi\") is a popular slang expression, often used among friends or in romantic relationships, especially in African American Vernacular English (AAVE) and social media culture.\n\nWould you like to talk about who your \"boi\" is?"
+        prompt: "What is the weather like today?",
+        response: "I don't have access to live weather data at the moment, but you can check a reliable weather site like weather.com or use your device’s assistant."
       },
       {
-        "prompt": "my boi",
-        "response": "It sounds like you're referring to the song \"My Boi\" by City Morgue! Released in 2019, it's a high-energy track with a mix of hip-hop and punk influences. The song features a catchy hook and has gained a significant following among fans of hardcore and punk music. Do you have a favorite City Morgue song or album?"
+        prompt: "Schedule a meeting for tomorrow at 10 AM.",
+        response: "Noted. Please ensure your calendar is synced for accurate reminders."
       },
       {
-        "prompt": "my boi",
-        "response": "It looks like you're using a colloquialism! \"My boi\" is often used as a term of endearment, similar to \"babe,\" \"honey,\" or \"sweetheart.\" Is there something specific you'd like to chat about, or are you just expressing affection?"
+        prompt: "Who developed you?",
+        response: "I was developed by OpenAI, an artificial intelligence research and deployment company."
       }
     ]
   },
   {
-    "chat_id": 2,
-    "messages": [
+    chat_id: 2,
+    messages: [
       {
-        "prompt": "my boi",
-        "response": "It seems like you're using \"boi\" as a term of endearment or affection, similar to how some people use \"boyfriend\" or \"babe.\" Is everything okay? Who's your \"my boi\"?"
+        prompt: "Define artificial intelligence.",
+        response: "Artificial Intelligence refers to the simulation of human intelligence in machines that are programmed to think and learn like humans."
       },
       {
-        "prompt": "my boi",
-        "response": "It looks like you're using a colloquialism! \"My boi\" is often used as a slang term to express affection or camaraderie, similar to saying \"my buddy\" or \"my friend\". Is there something specific you'd like to talk about with your \"boi\"?"
+        prompt: "What is machine learning?",
+        response: "Machine learning is a subset of AI that involves training algorithms on data so they can make predictions or decisions without being explicitly programmed for the task."
       }
     ]
   },
   {
-    "chat_id": 3,
-    "messages": [
+    chat_id: 3,
+    messages: [
       {
-        "prompt": "my boi",
-        "response": "It seems like you're using \"boi\" as a term of endearment or affection, similar to how some people use \"boyfriend\" or \"babe.\" Is everything okay? Who's your \"my boi\"?"
+        prompt: "Explain the concept of data privacy.",
+        response: "Data privacy refers to the proper handling of sensitive data, including how it is collected, stored, and shared to ensure individuals' rights are protected."
       },
       {
-        "prompt": "my boi",
-        "response": "It looks like you're using a colloquialism! \"My boi\" is often used as a slang term to express affection or camaraderie, similar to saying \"my buddy\" or \"my friend\". Is there something specific you'd like to talk about with your \"boi\"?"
+        prompt: "Why is cybersecurity important?",
+        response: "Cybersecurity is critical because it helps protect sensitive information, systems, and networks from unauthorized access, data breaches, and other malicious threats."
       }
     ]
   }
-]
+];
 
 export default chats;
